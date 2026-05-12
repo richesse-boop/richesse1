@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teranga Food | Excellence Culinaire Sénégalaise</title>
+    <style>
+       
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            background-color: #7C2D12;
+            border-bottom: 3px solid #D97706;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid #D97706;
+        }
+
+        .menu {
+            display: flex;
+            gap: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #FED7AA;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #FFFFFF;
+        }
+
+        .banniere {
+            position: relative;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .banniere-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .banniere-texte {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+        }
+
+        .banniere-texte h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .boutons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .bouton {
+            padding: 10px 20px;
+            background-color: #D97706;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .titre-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .titre-section h1 {
+            font-size: 1.8rem;
+            color: #7C2D12;
+        }
+
+        .grille {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 90%;
+            margin: 0 auto 40px;
+        }
+
+        .carte {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .carte img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .prix {
+            color: #D97706;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+
+        .histoire {
+            background-color: #7C2D12;
+            padding: 40px 20px;
+            color: #FFEDD5;
+            text-align: center;
+        }
+
+        .histoire-contenu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .bloc-info {
+            max-width: 300px;
+        }
+
+        .titre-orange {
+            color: #D97706;
+        }
+
+        .formulaire-section {
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .groupe-saisie {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .groupe-saisie input,
+        .groupe-saisie select {
+            padding: 10px;
+            border: 1px solid #FED7AA;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .bouton-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #D97706;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+
+        @media (max-width: 768px) {
+            .navigation {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .banniere-texte h1 {
+                font-size: 1.8rem;
+            }
+
+            .formulaire-section {
+                width: 85%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu a {
+                font-size: 0.8rem;
+            }
+
+            .bouton {
+                width: 100%;
+                text-align: center;
+            }
+
+            .titre-section h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="navigation">
+        <div class="logo">
+            <img src="teranga.webp" alt="Logo Teranga">
+        </div>
+        <nav class="menu">
+            <a href="propos.html">À propos</a>
+            <a href="carte.html">La Carte</a>
+            <a href="reserver.html">Réserver</a>
+            <a href="contact.html">Contact</a>
+            <a href="galerie.html">Galerie</a>
+        </nav>
+    </header>
+
+    <section class="banniere">
+        <img src="poulet.jpg" alt="Poulet Yassa" class="banniere-image">
+        <div class="banniere-texte">
+            <h1>L'Art de Recevoir à la Sénégalaise</h1>
+            <p>Une immersion culinaire où chaque épice raconte une histoire et chaque plat célèbre le partage.</p>
+            <div class="boutons">
+                <a href="#carte" class="bouton">Explorer la Carte</a>
+                <a href="galerie.html" class="bouton">Explorer le restaurant</a>
+                <a href="#reserver" class="bouton">Privatiser une Table</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="titre-section">
+        <h1>Immersion dans notre Univers</h1>
+        <p>Un cadre raffiné pour une expérience sensorielle inoubliable.</p>
+    </div>
+
+    <div class="grille">
+        <div class="carte">
+            <img src="client.jpg" alt="Ambiance">
+            <h3>Instants de Joie</h3>
+        </div>
+        <div class="carte">
+            <img src="equipe.jpg" alt="Staff">
+            <h3>Nos Artisans du Goût</h3>
+        </div>
+        <div class="carte">
+            <img src="place.jpg" alt="Salle">
+            <h3>Le Salon Teranga</h3>
+        </div>
+    </div>
+
+    <section class="histoire" id="propos">
+        <h2 class="titre-orange">Héritage & Passion</h2>
+        <p>Teranga Food est une ambassade du goût dédiée à la culture sénégalaise.</p>
+        <div class="histoire-contenu">
+            <div class="bloc-info">
+                <h4>Sourcing Local</h4>
+                <p>En collaboration directe avec nos agriculteurs locaux.</p>
+            </div>
+            <div class="bloc-info">
+                <h4>Tradition</h4>
+                <p>Des recettes transmises de génération en génération.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="titre-section" id="carte">
+        <h1>Nos Créations Signatures</h1>
+        <p>Le mariage parfait entre tradition ancestrale et modernité.</p>
+    </div>
+
+    <div class="grille">
+        <div class="carte">
+            <img src="thiep.jpg" alt="Thiep">
+            <h3>Thieboudienne Royal</h3>
+            <p>Le joyau du Sénégal : riz onctueux au poisson et légumes.</p>
+            <span class="prix">6 000 FCFA</span>
+        </div>
+        <div class="carte">
+            <img src="yassa poulet.jpg" alt="Yassa">
+            <h3>Yassa Signature</h3>
+            <p>Poulet braisé sublimé par une compotée d'oignons citronnée.</p>
+            <span class="prix">5 500 FCFA</span>
+        </div>
+        <div class="carte">
+            <img src="mafé.jpg" alt="Mafé">
+            <h3>Mafé Gourmand</h3>
+            <p>Sauce arachide veloutée et viande fondante.</p>
+            <span class="prix">4 500 FCFA</span>
+        </div>
+        <div class="carte">
+            <img src="brochette.jpg" alt="Mafé">
+            <h3>brochettes</h3>
+            <p> viande bien cuite et fondante.</p>
+            <span class="prix">4 500 FCFA</span>
+        </div>
+        <div class="carte">
+            <img src="bissap.jpg" alt="Mafé">
+            <h3>jus bissap</h3>
+            <p>notre jus traditionnel .</p>
+            <span class="prix">1 500 FCFA</span>
+        </div>
+        <div class="carte">
+            <img src="biuye.jpg" alt="Mafé">
+            <h3>jus bouye</h3>
+            <p>notre jus traditionnel .</p>
+            <span class="prix">1 500 FCFA</span>
+        </div>
+    </div>
+
+    <section class="formulaire-section" id="reserver">
+        <h2>Planifiez votre visite</h2>
+        <form>
+            <div class="groupe-saisie">
+                <label>Nom Complet</label>
+                <input type="text" placeholder="Ex: Jean Diop" required>
+            </div>
+            <div class="groupe-saisie">
+                <label>Nombre de convives</label>
+                <select>
+                    <option>Dîner en tête-à-tête</option>
+                    <option>Table familiale (4-6)</option>
+                    <option>Événement de groupe</option>
+                </select>
+            </div>
+            <div class="groupe-saisie"><label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="groupe-saisie"><label for="heure">heure</label>
+                    <input type="time" id="heure" name="heure" required>
+                </div>
+                <div class="groupe-saisie"><label for="number">numero </label>
+                    <input type="phone" id="phone" name="phone" placeholder="votre numéro" required>
+                </div>
+            <button type="submit" class="bouton-submit">Confirmer la demande</button>
+        </form>
+    </section>
+
+</body>
+
+</html>

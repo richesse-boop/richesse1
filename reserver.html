@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="barre-navigation">
+        <div class="embleme">
+                <img src="teranga.webp" alt="Logo Teranga">
+        </div>
+        <nav class="liens-menu">
+            <a href="propos.html">L'Esprit</a>
+            <a href="carte.html">La Carte</a>
+            <a href="galerie.html">Réserver</a>
+            <a href="contact.html">Nous trouver</a>
+            <a href="index.html">notre page</a>
+        </nav>
+    </header>
+      <section class="formulaire-section" id="reserver">
+        <h2>Planifiez votre visite</h2>
+        <form>
+            <div class="groupe-saisie">
+                <label>Nom Complet</label>
+                <input type="text" placeholder="Ex: Jean Diop" required>
+            </div>
+            <div class="groupe-saisie">
+                <label>Nombre de convives</label>
+                <select>
+                    <option>Dîner en tête-à-tête</option>
+                    <option>Table familiale (4-6)</option>
+                    <option>Événement de groupe</option>
+                </select>
+            </div>
+            <div class="groupe-saisie"><label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="groupe-saisie"><label for="heure">heure</label>
+                    <input type="time" id="heure" name="heure" required>
+                </div>
+                <div class="groupe-saisie"><label for="number">numero </label>
+                    <input type="phone" id="phone" name="phone" placeholder="votre numéro" required>
+                </div>
+            <button type="submit" class="bouton-submit">Confirmer la demande</button>
+        </form>
+    </section>
+<section class="histoire" id="propos">
+        <h2 class="titre-orange">Héritage & Passion</h2>
+        <p>Teranga Food est une ambassade du goût dédiée à la culture sénégalaise.</p>
+        <div class="histoire-contenu">
+            <div class="bloc-info">
+                <h4>Sourcing Local</h4>
+                <p>En collaboration directe avec nos agriculteurs locaux.</p>
+            </div>
+            <div class="bloc-info">
+                <h4>Tradition</h4>
+                <p>Des recettes transmises de génération en génération.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
